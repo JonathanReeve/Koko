@@ -203,7 +203,7 @@ QVariant MediaMimeTypeModel::data(const QModelIndex &index, int role) const
             if (dayoffset < 1) {
                 dateString = qdate.toString(currentDayString);
             } else if (dayoffset == 1) {
-                dateString = i18n("yestday ")+ qdate.toString(currentDayString);
+                dateString = i18n("yesterday ")+ qdate.toString(currentDayString);
             } else {
                 //qdate.date().dayOfWeek() +
                 dateString =  qdate.toString("dddd " + currentDayString);
